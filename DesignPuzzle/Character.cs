@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace DesignPuzzle
 {
-    public class Character
+    public abstract class Character
     {
+        IWeaponBehavior _fightingType;
+
+        public Character()
+        {
+
+        }
+
+
     }
 }

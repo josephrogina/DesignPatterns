@@ -13,7 +13,7 @@ namespace SimuDuck
 
         public Duck()
         {
-
+            // We could instantiate _flyBehavior and _quackBehavior on service start here...
         }
 
         public void SetFlyBehavior(IFlyBehavior flyBehavior)
