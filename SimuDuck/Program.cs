@@ -9,6 +9,7 @@ namespace SimuDuck
             Duck mallard = new MallardDuck();
             mallard.PerformQuack();
             mallard.PerformFly();
+            mallard.Swim();
         }
     }
 }

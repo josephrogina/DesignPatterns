@@ -8,13 +8,18 @@ namespace DesignPuzzle
 {
     public abstract class Character
     {
-        IWeaponBehavior _fightingType;
+        public IWeaponBehavior _weaponBehavior;
 
         public Character()
         {
 
         }
 
+        public void SetWeapon(IWeaponBehavior weaponBehavior)
+        {
+            _weaponBehavior = weaponBehavior;
+        }
 
+        public virtual void Fight() { }
     }
 }

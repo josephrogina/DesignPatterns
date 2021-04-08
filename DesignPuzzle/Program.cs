@@ -6,7 +6,11 @@ namespace DesignPuzzle
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Character king = new King();
+            king.SetWeapon(king._weaponBehavior);
+            king.Fight();
+            //TODO: I would not normally do it this way, but for the excersice it's fine.
+            king._weaponBehavior.UseWeapon();
         }
     }
 }
